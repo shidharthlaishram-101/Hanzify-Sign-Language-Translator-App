@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-//import 'package:signify/camerascreen.txt';
-import 'package:signify/models/wordtosign.dart';
-//import 'package:signify/feedback.txt';
+import 'package:signify/model_call.dart';
+import 'package:signify/wordtosign.dart';
+import 'package:signify/feedback.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -44,12 +44,12 @@ class _HomePageState extends State<HomePage> {
               subtitle: "Convert signs into words",
               icon: Icons.sign_language,
               onPressed: () {
-                /*Navigator.push(
+                Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => CameraScreen(),
+                    builder: (context) => ModelCall(),
                   ),
-                );*/
+                );
               },
             ),
             const SizedBox(height: 16),
@@ -68,16 +68,16 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 16),
             CustomNavButton(
-              text: "Rate & Review",
+              text: "Review",
               subtitle: "Help us improve",
               icon: Icons.star_rate,
               onPressed: () {
-                /*Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (builder) => FeedbackPage(),
-                    ),
-                );*/
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (builder) => FeedbackPage(),
+                  ),
+                );
               },
             ),
           ],
