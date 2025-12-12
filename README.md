@@ -1,4 +1,4 @@
-# Signify 🤟
+# HANZIFY 🤟
 
 A Flutter-based mobile application that translates text and sign language, making communication more accessible for deaf and hard-of-hearing communities.
 
